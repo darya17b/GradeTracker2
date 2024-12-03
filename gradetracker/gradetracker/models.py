@@ -13,6 +13,7 @@ class Course(models.Model):
     name : name of the course
     instructor : name of the instructor
     """
+    student = models.ForeignKey(User, on_delete = models.CASCADE, default=1)
     name = models.CharField(max_length = 200)
     code = models.CharField(max_length = 5, unique=True)
     instructor = models.CharField(max_length = 200)
