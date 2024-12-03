@@ -36,24 +36,29 @@
       <div class="over_flex_item" id="sidebar">
         <img src="{% static 'sidebar_graphic-01.png' %}" alt="Gradient Graphic">
         <img src="{% static 'user_icon-01.png' %}" id="user_icon">
+        
         <a href="{% url 'logout' %}" id="logout_button">Logout</a>
       </div>
 
 
       <div class="over_flex_item_right" id="course">
         <a href="{% url 'home' %}" id="back_button">Return to home screen</a>
-        <h1> DTC 101 </h1>
+        <h1> {{ course.name }} {{ course.code }}</h1>
         <hr>
         {% for grade in grades %}
         <div class="assignment">
           <h2> {{ grade.assignment.title }}</h2>
           <h3>Grade: {{ grade.score }}/100</h3>
           <div class="comment_box">
-            <h3> {{ grade.feedback }}</h3>
+            {% if grade.feedback %}
+                <h3> {{ grade.feedback }}</h3>
+            {% else %}
+                <h3> No feedback avaliable </h3>
+            {% endif %}    
           </div>
          </div> 
          {% endfor %}
-        <h1> Overall Grade: 90.2/100 </h1>
+        <h1> Overall Grade: {{ average_grade|floatformat:2 }}/100 </h1>
       </div>
 
     </div>

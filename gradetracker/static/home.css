@@ -27,13 +27,10 @@
 }
 
 h2{
-    position: absolute;
-    top: 300px; /* Position icon at the top-left corner */
-    left: 60px; 
     font-family: Roboto;
 	font-weight: 700;
 	font-size: 25px;
-    color: white;
+    color: #442F91;
 }
 
 #user_icon{
@@ -45,6 +42,7 @@ h2{
 
 #courses{
 	display: flex;
+    flex: 1 1 30%;
 	margin-right: auto;
 	padding-top: 100px;
 	padding-left: 100px;
@@ -63,8 +61,10 @@ h2{
 }
 
 .course_flex_box{
-	display: flex;
+    display: flex;
 	flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
 }
 
 #course_button{
@@ -99,4 +99,27 @@ hr
 	color: #442F91;
 	opacity: 24%;
 	margin-bottom: 25px;
+}
+
+#back_button{
+	background-color: #4FC8EF;
+	width: 300px;
+	height: 60px;
+	text-align: center;
+	color: white;
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 24px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 2px solid white;
+	transition: background-color 0.3s;
+}
+
+#back_button:hover{
+	background-color: #ED2B85;
+	color: white;
+	border-color: #ED2B85;
+	box-shadow: none;
+	border: 2px solid #ED2B85;
 }

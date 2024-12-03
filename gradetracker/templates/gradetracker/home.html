@@ -36,12 +36,12 @@
       <div class="over_flex_item" id="sidebar">
         <img src="{% static 'sidebar_graphic-01.png' %}" alt="Gradient Graphic">
         <img src="{% static 'user_icon-01.png' %}" id="user_icon">
-        <h2> Welcome, {{ user.username }}!</h2>
         <a href="{% url 'logout' %}" id="logout_button">Logout</a>
       </div>
 
 
       <div class="over_flex_item_right" id="courses">
+        <h2> Welcome, {{ user.username }}!</h2>
         <h1>Courses</h1>
         <hr>
         <div class="course_flex_box">
@@ -60,7 +60,9 @@
 
           
         </div>
-
+            <br>
+            <br>
+            <a href="{% url 'finalgrade' %}" id="back_button">Final Grade Calculator</a>  
       </div>
 
     </div>

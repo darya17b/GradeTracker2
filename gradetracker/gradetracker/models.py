@@ -41,6 +41,7 @@ class Grade(models.Model):
     score: the score a person got 
     feedback: this is anentry feedback that admin can write into it. 
     """
+    course = models.ForeignKey(Course, on_delete= models.CASCADE, default = 2)
     student = models.ForeignKey(User, on_delete = models.CASCADE)
     assignment = models.ForeignKey(Assignment, on_delete = models.CASCADE)
     score = models.IntegerField()
