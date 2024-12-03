@@ -18,7 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib.auth import views as auth_views
 from . import views
+from django.views.generic import RedirectView
 from .student_grades import student_grades
+from .student_courses import student_courses
+from .final_grade_cal import final_grade_cal
 
 
 
@@ -27,6 +30,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/login/', auth_views.LoginView.as_view(template_name='gradetracker/login.html'), name='login'),
     path('accounts/logout/', auth_views.LogoutView.as_view(), name='logout'),
-    path('grades/', student_grades, name='student_grades'),
-    path('', views.home, name='home'), 
+    path('grades/<int:course_id>', student_grades, name='student_grades'),
+    path('', RedirectView.as_view(url='/accounts/login/', permanent=False)), 
+    path('accounts/login/home/', student_courses, name='home'),
+    path('finalgrade/', final_grade_cal, name='finalgrade')
 ]

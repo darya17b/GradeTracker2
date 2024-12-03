@@ -13,6 +13,7 @@ class Course(models.Model):
     name : name of the course
     instructor : name of the instructor
     """
+    student = models.ForeignKey(User, on_delete = models.CASCADE, default=1)
     name = models.CharField(max_length = 200)
     code = models.CharField(max_length = 5, unique=True)
     instructor = models.CharField(max_length = 200)
@@ -40,6 +41,7 @@ class Grade(models.Model):
     score: the score a person got 
     feedback: this is anentry feedback that admin can write into it. 
     """
+    course = models.ForeignKey(Course, on_delete= models.CASCADE, default = 2)
     student = models.ForeignKey(User, on_delete = models.CASCADE)
     assignment = models.ForeignKey(Assignment, on_delete = models.CASCADE)
     score = models.IntegerField()
