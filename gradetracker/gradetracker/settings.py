@@ -132,3 +132,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #redirect to the grades page
 LOGIN_REDIRECT_URL = 'home/'
 LOGOUT_REDIRECT_URL = '/accounts/login/'  
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.example.com'  
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+# get the email
+EMAIL_HOST_USER = 'email@yahoo.com'  
+EMAIL_HOST_PASSWORD = 'password'     
+DEFAULT_FROM_EMAIL = 'email@yahoo.com'

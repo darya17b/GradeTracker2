@@ -33,5 +33,10 @@ urlpatterns = [
     path('grades/<int:course_id>', student_grades, name='student_grades'),
     path('', RedirectView.as_view(url='/accounts/login/', permanent=False)), 
     path('accounts/login/home/', student_courses, name='home'),
-    path('finalgrade/', final_grade_cal, name='finalgrade')
+    path('finalgrade/', final_grade_cal, name='finalgrade'), 
+    # password reset 
+    path('password_reset/', auth_views.PasswordResetView.as_view(template_name='gradetracker/password_reset_form.html'), name='password_reset'),
+    path('password_reset/done/', auth_views.PasswordResetDoneView.as_view(template_name='gradetracker/password_reset_done.html'), name='password_reset_done'),
+    path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name='gradetracker/password_reset_confirm.html'), name='password_reset_confirm'),
+    path('reset/done/', auth_views.PasswordResetCompleteView.as_view(template_name='gradetracker/password_reset_complete.html'), name='password_reset_complete'),
 ]
