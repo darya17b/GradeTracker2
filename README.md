@@ -1,3 +1,35 @@
+## Our sprint reports 
+1. Sprint 1: https://docs.google.com/document/d/1Zh24PAA-bf39GJL5X7No3xXMoq9NERgR/edit?usp=sharing&ouid=115697524229141098907&rtpof=true&sd=true
+2. Sprint 2: https://docs.google.com/document/d/1l3xrkLuflyte4k_5zauy95plgBQ51t_O/edit?usp=sharing&ouid=115697524229141098907&rtpof=true&sd=true
+
+## Our UML Diagrams 
+1. Use Case Diagram
+![UseCaseDiagramImage](https://github.com/user-attachments/assets/c9c0368c-6335-45f5-8759-e21c1f176731)
+
+2. Class Diagram
+![image](https://github.com/user-attachments/assets/ae147072-cfc3-4921-bb86-b739ad88885a)
+
+3. Collaboration Diagram
+
+![image](https://github.com/user-attachments/assets/e61f41d4-f97c-46de-8530-c3f87fa15b2f)
+   
+4. Sequence Diagram
+   
+![image](https://github.com/user-attachments/assets/246bd07f-4ac7-440e-96e5-3ef34c53a42b)
+
+5. Activity Diagram
+   
+![image](https://github.com/user-attachments/assets/a065ad92-a31d-43b8-9f37-842fa37d0df0)
+
+6. State Diagram
+![image](https://github.com/user-attachments/assets/05452f64-124c-4313-838d-b4066b8be40f)
+
+7. Component Diagram
+![image](https://github.com/user-attachments/assets/5f5e988e-178f-464b-ade4-75721a969918)
+
+8. Deployment Diagram
+![image](https://github.com/user-attachments/assets/8122226c-c917-4831-899e-02a325a6560a)
+
 ## Getting Started
 Follow the steps below to clone the repository and set up the project locally.
 
