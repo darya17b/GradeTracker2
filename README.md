@@ -1,6 +1,7 @@
 ## Our sprint reports 
 1. Sprint 1: https://docs.google.com/document/d/1Zh24PAA-bf39GJL5X7No3xXMoq9NERgR/edit?usp=sharing&ouid=115697524229141098907&rtpof=true&sd=true
-2. Sprint 2: https://docs.google.com/document/d/1l3xrkLuflyte4k_5zauy95plgBQ51t_O/edit?usp=sharing&ouid=115697524229141098907&rtpof=true&sd=true
+2. Sprint 2: https://docs.google.com/document/d/1akgnEpIrOl-JqRF6Cl7_DRgIaNcb-HBu/edit
+3. Sprint 3: https://docs.google.com/document/d/1lZOQdl65-IU5wJdpxDSV0tBc74KE6q4V/edit
 
 ## Our UML Diagrams 
 1. Use Case Diagram
